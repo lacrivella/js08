@@ -2,9 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>HTML5 Canvas</title>
+  <title>I Make Drawing FUN</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header>
+    <h2>Draw Trogdor the Burninator!</h2>
+  </header>
+<!-- first draw an S for snake...or dragon
+Draw a more different S
+ -->
 <canvas id="draw" width="800" height="800"></canvas>
 <script>
   const canvas = document.querySelector('#draw');
@@ -59,12 +66,5 @@
   canvas.addEventListener('mouseup', () => isDrawing = false);
   canvas.addEventListener('mouseout', () => isDrawing = false);
 </script>
-
-<style>
-  html, body {
-    margin: 0;
-  }
-</style>
-
 </body>
 </html>
